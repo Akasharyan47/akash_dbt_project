@@ -13,5 +13,10 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+models:
+  akash_dbt_project:
+    example:
+      +materialized: view
+
 flags:
   use_materialization_v2: true
