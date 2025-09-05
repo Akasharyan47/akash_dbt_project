@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: source
+    database: dbt_dev
+    schema: source
+    tables:
+      - name: fact_sales
+        description: "Fact sales table with sales transactions"
+        columns:
+          - name: sales_id
+            description: "Sales transaction ID"
+          - name: date_sk
+            description: "Date surrogate key"
+          - name: product_sk
+            description: "Product surrogate key"
+          - name: customer_sk
+            description: "Customer surrogate key"
+          - name: promotion_sk
+            description: "Promotion surrogate key"
+          - name: quantity
+            description: "Quantity sold"
+          - name: unit_price
+            description: "Unit price of product"
+          - name: gross_amount
+            description: "Gross amount before discount"
+          - name: discount_amount
+            description: "Discount amount"
+          - name: net_amount
+            description: "Net amount after discount"
+          - name: payment_method
+            description: "Payment method used"
