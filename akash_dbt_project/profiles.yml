@@ -1,0 +1,12 @@
+akash_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: dbt_project_dev
+      schema: dbt_dev
+      host: dbc-2a213262-2333.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/7d109ca1b01d8933
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      threads: 1
+      connect_timeout: 30

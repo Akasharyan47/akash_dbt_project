@@ -1,0 +1,11 @@
+akash_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: spark
+      method: thrift
+      host: localhost
+      port: 10000
+      schema: default
+      user: ''
+      password: ''
